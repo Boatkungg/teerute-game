@@ -1,5 +1,7 @@
+'use client';
+
 import { useState } from "react";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogClose,
@@ -9,8 +11,8 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "./ui/dialog";
-import { Input } from "./ui/input";
+} from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
 
 export default function SetAnswerDialog({
   children,

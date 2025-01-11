@@ -10,7 +10,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
-import SetAnswerDialog from "./set-answer-dialog";
+import SetAnswerDialog from "@/components/set-answer-dialog";
 import { Calculator } from "lucide-react";
 
 export default function WebSidebar() {

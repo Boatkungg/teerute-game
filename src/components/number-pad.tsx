@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { NumberButton } from "./custom/number-button";
+import { NumberButton } from "@/components/custom/number-button";
 
 interface NumberPadProps {
   onNumberClick: React.Dispatch<React.SetStateAction<string>>;
