@@ -1,12 +1,16 @@
 "use client";
 
+import dynamic from "next/dynamic";
+import { SidebarTrigger } from "@/components/ui/sidebar";
+import { useEffect, useState } from "react";
+
 import NumberDisplay from "@/components/number-display";
 import NumberFooter from "@/components/number-footer";
 import NumberPad from "@/components/number-pad";
 import ResetFooter from "@/components/reset-footer";
-import ThemeButton from "@/components/theme-button";
-import { SidebarTrigger } from "@/components/ui/sidebar";
-import { useEffect, useState } from "react";
+const ThemeButton = dynamic(() => import("@/components/theme-button"), {
+  ssr: false,
+});
 
 export default function Home() {
   const [numbers, setNumbers] = useState<string>("????");

@@ -1,5 +1,5 @@
-"use client";
-
+import dynamic from "next/dynamic";
+import { Calculator } from "lucide-react";
 import {
   Sidebar,
   SidebarContent,
@@ -10,8 +10,10 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
-import SetAnswerDialog from "@/components/set-answer-dialog";
-import { Calculator } from "lucide-react";
+
+const SetAnswerDialog = dynamic(() => import("@/components/set-answer-dialog"), {
+  ssr: false,
+});
 
 export default function WebSidebar() {
   return (
